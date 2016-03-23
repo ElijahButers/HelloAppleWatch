@@ -24,7 +24,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
-        label.setText("Hello Apple Watch in Swift!")
+        label.setText("👋🏿🍎⌚️!!")
     }
 
     override func didDeactivate() {

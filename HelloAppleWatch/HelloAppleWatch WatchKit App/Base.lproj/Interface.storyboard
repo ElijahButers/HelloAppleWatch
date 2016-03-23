@@ -10,7 +10,9 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelloAppleWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="Hello Apple Watch!" textAlignment="center" numberOfLines="2" id="Qic-N6-Pho"/>
+                        <label alignment="center" verticalAlignment="center" text="Hello Apple Watch!" textAlignment="center" numberOfLines="0" id="Qic-N6-Pho">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="label" destination="Qic-N6-Pho" id="TDU-sF-fNd"/>
