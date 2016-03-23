@@ -20,6 +20,7 @@
 		E2F2E96E1CA292990040B0B0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2E96D1CA292990040B0B0 /* ExtensionDelegate.swift */; };
 		E2F2E9701CA292990040B0B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F2E96F1CA292990040B0B0 /* Assets.xcassets */; };
 		E2F2E9741CA292990040B0B0 /* HelloAppleWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E2F2E95A1CA292990040B0B0 /* HelloAppleWatch WatchKit App.app */; };
+		E2F2E97E1CA2A1A10040B0B0 /* EmojiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4048E79D1BA71FA7005CEAE2 /* EmojiData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				40E08A551B4FC70400D06A21 /* HelloAppleWatch */,
+				E2F2E97D1CA2A14C0040B0B0 /* Shared */,
 				E2F2E95B1CA292990040B0B0 /* HelloAppleWatch WatchKit App */,
 				E2F2E96A1CA292990040B0B0 /* HelloAppleWatch WatchKit App Extension */,
 				40E08A541B4FC70400D06A21 /* Products */,
@@ -127,7 +129,6 @@
 			children = (
 				40E08A561B4FC70400D06A21 /* AppDelegate.swift */,
 				40E08A581B4FC70400D06A21 /* ViewController.swift */,
-				4048E79D1BA71FA7005CEAE2 /* EmojiData.swift */,
 				40E08A5A1B4FC70400D06A21 /* Main.storyboard */,
 				40E08A5D1B4FC70400D06A21 /* Assets.xcassets */,
 				40E08A5F1B4FC70400D06A21 /* LaunchScreen.storyboard */,
@@ -155,6 +156,15 @@
 				E2F2E9711CA292990040B0B0 /* Info.plist */,
 			);
 			path = "HelloAppleWatch WatchKit App Extension";
+			sourceTree = "<group>";
+		};
+		E2F2E97D1CA2A14C0040B0B0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4048E79D1BA71FA7005CEAE2 /* EmojiData.swift */,
+			);
+			name = Shared;
+			path = HelloAppleWatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F2E96E1CA292990040B0B0 /* ExtensionDelegate.swift in Sources */,
+				E2F2E97E1CA2A1A10040B0B0 /* EmojiData.swift in Sources */,
 				E2F2E96C1CA292990040B0B0 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
