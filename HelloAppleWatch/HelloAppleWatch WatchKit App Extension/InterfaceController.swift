@@ -48,6 +48,7 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func newFortune() {
         
+        showFortune()
     }
 }
 
