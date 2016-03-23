@@ -12,6 +12,9 @@
                     <items>
                         <button width="1" height="0.90000000000000002" alignment="center" verticalAlignment="bottom" title="Button" id="Gv9-8q-RJl">
                             <fontDescription key="font" type="system" pointSize="22"/>
+                            <connections>
+                                <action selector="newFortune" destination="AgC-eL-Hgc" id="2J1-2Z-jkb"/>
+                            </connections>
                         </button>
                     </items>
                     <variation key="default">
@@ -24,6 +27,9 @@
                             <include reference="Gv9-8q-RJl"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <outlet property="button" destination="Gv9-8q-RJl" id="zLI-VQ-oya"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="647.74358974358984" y="469.46153846153851"/>

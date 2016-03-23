@@ -12,7 +12,7 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet var label: WKInterfaceLabel!
+    @IBOutlet var button: WKInterfaceButton!
     
     var emoji = EmojiData()
     
@@ -42,9 +42,12 @@ class InterfaceController: WKInterfaceController {
         let placesIndex = emoji.places.count.random()
         let symbolsIndex = emoji.symbols.count.random()
         
-        label.setText("\(emoji.people[peopleIndex])\(emoji.nature[natureIndex])\(emoji.objects[objectsIndex])\(emoji.places[placesIndex])\(emoji.symbols[symbolsIndex])")
+        button.setTitle("\(emoji.people[peopleIndex])\(emoji.nature[natureIndex])\(emoji.objects[objectsIndex])\(emoji.places[placesIndex])\(emoji.symbols[symbolsIndex])")
         
     }
 
+    @IBAction func newFortune() {
+        
+    }
 }
 
