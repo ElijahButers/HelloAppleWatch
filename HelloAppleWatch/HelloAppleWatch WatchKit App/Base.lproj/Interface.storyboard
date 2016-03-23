@@ -10,15 +10,23 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelloAppleWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="Hello Apple Watch!" textAlignment="center" numberOfLines="0" id="Qic-N6-Pho">
-                            <fontDescription key="font" type="system" pointSize="24"/>
-                        </label>
+                        <button width="1" height="0.90000000000000002" alignment="center" verticalAlignment="bottom" title="Button" id="Gv9-8q-RJl">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </button>
                     </items>
-                    <connections>
-                        <outlet property="label" destination="Qic-N6-Pho" id="TDU-sF-fNd"/>
-                    </connections>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="Gv9-8q-RJl"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="Gv9-8q-RJl"/>
+                        </mask>
+                    </variation>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="647.74358974358984" y="469.46153846153851"/>
         </scene>
     </scenes>
 </document>
