@@ -26,6 +26,16 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
+        showFortune()
+    }
+
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+    }
+    
+    func showFortune() {
+        
         let peopleIndex = emoji.people.count.random()
         let natureIndex = emoji.nature.count.random()
         let objectsIndex = emoji.objects.count.random()
@@ -33,11 +43,8 @@ class InterfaceController: WKInterfaceController {
         let symbolsIndex = emoji.symbols.count.random()
         
         label.setText("\(emoji.people[peopleIndex])\(emoji.nature[natureIndex])\(emoji.objects[objectsIndex])\(emoji.places[placesIndex])\(emoji.symbols[symbolsIndex])")
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+        
     }
 
 }
+
