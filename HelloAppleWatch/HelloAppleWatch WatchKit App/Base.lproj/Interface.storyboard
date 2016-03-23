@@ -12,6 +12,9 @@
                     <items>
                         <label alignment="center" verticalAlignment="center" text="Hello Apple Watch!" textAlignment="center" id="Qic-N6-Pho"/>
                     </items>
+                    <connections>
+                        <outlet property="label" destination="Qic-N6-Pho" id="TDU-sF-fNd"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>
